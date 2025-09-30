@@ -39,7 +39,8 @@
 // |   4   |  5  |  6  |  +   |  c   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // |   1   |  2  |  3  |  -   |  d   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 // |   back|  0  |  .  |  = R | enter
-&kp GRAVE   &kp LPAR    &kp RPAR    &kp ASTRK   &kp N3   &kp a    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
+  bindings = <
+&kp GRAVE   &kp LPAR    &kp RPAR    &kp ASTRK   &kp N3   &kp a                               &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
 &kp N7      &kp N8      &kp N9      &kp BSLH    &kp R     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp N4      &kp N5      &kp N6      &kp PLUS    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp N1      &kp N2      &kp N3      &kp MINUS     &kp V     &kp B      &kp C_MUTE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
