@@ -19,3 +19,14 @@
 &left_encoder {
     status = "okay";
 };
+
+/ { 
+    led_strip: ws2812@0 { 
+        compatible = "worldsemi,ws2812"; 
+        label = "RGB_STRIP"; 
+        pin = <&pro_micro 1>;  // 替换为实际引脚（如Nice Nano的P0.17） 
+        num_leds = 30;   // 替换为实际灯珠数量（如30） 
+        max_brightness = <255>; 
+        color_mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;  // 根据灯带引脚顺序调整 
+    }; 
+}; 
