@@ -29,10 +29,13 @@
     rgb_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
         label = "WS2812";
-        spi-dev = <&spi1>;
         chain-length = <12>;
     };
- 
+     rgb_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-gpio";
+        gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+        chain-length = <12>;
+    };
 };
  
 &spi1 {
