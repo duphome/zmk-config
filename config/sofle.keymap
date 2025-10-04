@@ -131,3 +131,24 @@
 
     };
 };
+&pinctrl {
+    // 配置引脚复用（以nRF52840为例）
+    pwm0_default: pwm0_default {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 0, 08)>; // 指定GPIO0_15为信号引脚
+        };
+    };
+};
+
+&pwm0 {
+    status = "okay";
+    pinctrl-0 = <&pwm0_default>;
+};
+
+&rgb {
+    compatible = "zmk,rgb";
+    label = "RGB";
+    chain-length = <12>; // LED灯珠数量 
+    pwm-device = <&pwm0>;
+};
+ 
