@@ -29,8 +29,6 @@
     chain-length = <21>;
 };
 
-
-
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
